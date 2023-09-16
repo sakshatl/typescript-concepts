@@ -1,4 +1,5 @@
-import { Account } from './scripts/Account';
+import { Account } from './classes/Account';
+import { SavingsAccount } from './classes/BankAccount';
 
 const account1 = new Account("Sakshat", "Lidhoo");
 const accout2 = new Account("Foo", "Bar");
@@ -6,7 +7,8 @@ const accout3 = new Account("Sarah", "Johnes");
 
 const accounts = [account1, accout2, accout3];
 
-// Render UI logic
+const savingsAccount1 = new SavingsAccount("Sakshat", "Lidhoo", 25);
+
 function renderUI() {
   const rootElem = document.getElementById('root');
   
